@@ -1,0 +1,21 @@
+models:
+  - name: int_locations_dim
+    description: Central location dimension that enriches time-series data with static attributes.
+    config:
+      materialized: table
+      transient: true
+  - name: int_epidemiology
+    description: Ensures daily-level consistency and adds growth rates for epidemiological trends.
+    config:
+      materialized: table
+      transient: true
+  - name: int_mobility
+    description: Converts raw mobility percentages into usable fractions for time-series modeling.
+    config:
+      materialized: table
+      transient: true
+  - name: int_vaccinations
+    description: Adds population-based vaccination coverage, enabling comparison across locations.
+    config:
+      materialized: table
+      transient: true
