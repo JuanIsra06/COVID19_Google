@@ -1,0 +1,37 @@
+models:
+  - name: stg_demographics
+    config:
+      materialized: table
+      transient: true
+  - name: stg_economy
+    config:
+      materialized: table
+      transient: true
+  - name: stg_geography
+    config:
+      materialized: table
+      transient: true
+  - name: stg_health
+    config:
+      materialized: table
+      transient: true
+  - name: stg_index
+    config:
+      materialized: table
+      transient: true
+  - name: stg_epidemiology
+    config:
+      materialized: table
+      transient: true
+  - name: stg_hospitalizations
+    config:
+      materialized: table
+      transient: true
+  - name: stg_mobility
+    config:
+      materialized: table
+      transient: true
+  - name: stg_vaccinations
+    config:
+      materialized: table
+      transient: true

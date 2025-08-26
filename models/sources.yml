@@ -1,0 +1,15 @@
+sources:
+  - name: public_schema
+    description: Raw sources from public schema
+    database: COVID19
+    schema: PUBLIC
+    tables:
+      - name: raw_index_json
+      - name: raw_geography_json
+      - name: raw_demographics_json
+      - name: raw_economy_json
+      - name: raw_health_json
+      - name: raw_epidemiology_csv
+      - name: raw_hospitalizations_csv
+      - name: raw_mobility_csv
+      - name: raw_vaccinations_csv
