@@ -1,0 +1,13 @@
+models:
+  - name: mart_covid_outcomes
+    description: Combined epidemiology + hospitalizations metrics per location and date.
+    config:
+      materialized: table
+  - name: mart_vaccination_effects
+    description: Vaccination coverage and its relation to cases/deaths per location and date.
+    config:
+      materialized: table
+  - name: mart_mobility_vs_spread
+    description: Mobility trends and COVID-19 spread correlation per location and date.
+    config:
+      materialized: table
