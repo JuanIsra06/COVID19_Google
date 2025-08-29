@@ -23,15 +23,43 @@ models:
     config:
       materialized: table
       transient: true
+    tests:
+      - unique:
+          column_name: "location_key || '-' || log_date"
+      - not_null: 
+          column_name: location_key
+      - not_null: 
+          column_name: log_date
   - name: stg_hospitalizations
     config:
       materialized: table
       transient: true
+    tests:
+      - unique:
+          column_name: "location_key || '-' || log_date"
+      - not_null: 
+          column_name: location_key
+      - not_null: 
+          column_name: log_date
   - name: stg_mobility
     config:
       materialized: table
       transient: true
+    tests:
+      - unique:
+          column_name: "location_key || '-' || log_date"
+      - not_null: 
+          column_name: location_key
+      - not_null: 
+          column_name: log_date
   - name: stg_vaccinations
     config:
       materialized: table
       transient: true
+    tests:
+      - unique:
+          column_name: "location_key || '-' || log_date"
+      - not_null: 
+          column_name: location_key
+      - not_null: 
+          column_name: log_date
